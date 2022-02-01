@@ -13,7 +13,7 @@ export function RandomGuess(props: GuessProps) {
           for (let i = 0; i < props.wordLength; i++) {
             props.onKey("Backspace");
           }
-          const guess = props.randomTarget(pros.wordLength);
+          const guess = props.randomTarget(props.wordLength);
           for (const letter of guess) {
             props.onKey(letter);
           }
